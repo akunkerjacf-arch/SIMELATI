@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Peluncuran Resmi SIMELATI — DPMPTSP Labuhanbatu Selatan</title>
+  <meta name="description" content="Peluncuran Resmi Aplikasi SIMELATI (Sistem Informasi Manajemen Layanan Administrasi dan Tata Usaha Internal) DPMPTSP Kabupaten Labuhanbatu Selatan. Santun Berkata - Bijak Berkarya." />
+  <meta property="og:title" content="Peluncuran Resmi SIMELATI — DPMPTSP Labuhanbatu Selatan" />
+  <meta property="og:description" content="Transformasi layanan administrasi dan tata usaha internal menuju pelayanan yang lebih cepat, transparan, dan terpercaya." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#061325" />
+
+  <style>
+    /* ==========================================================================
+       SISTEM DESAIN 3D RESMI SIMELATI - DPMPTSP LABUHANBATU SELATAN
+       Identitas: Deep Royal Navy (#040c17, #07172c), Biru Labusel (#1e70e3),
+       Emerald Hijau (#10b981), dan Emas Kemuliaan (#f59e0b, #fbbf24, #fde68a).
+       ========================================================================== */
+    :root {
+      --bg-darkest: #040c17;
+      --bg-navy-deep: #07172c;
+      --bg-navy-surface: #0b2447;
+      --primary-blue: #1e70e3;
+      --primary-blue-glow: rgba(30, 112, 227, 0.5);
+      --emerald: #10b981;
+      --emerald-dark: #059669;
+      --emerald-glow: rgba(16, 185, 129, 0.45);
+      --gold: #f59e0b;
+      --gold-light: #fbbf24;
+      --gold-shimmer: #fde68a;
+      --gold-glow: rgba(245, 158, 11, 0.55);
+      --text-pure: #ffffff;
+      --text-silver: #e2e8f0;
+      --text-muted: #94a3b8;
+      --border-glow: rgba(30, 112, 227, 0.4);
+      --glass-bg: rgba(7, 23, 44, 0.82);
+      --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      min-height: 100svh;
+      background-color: var(--bg-darkest);
+      color: var(--text-pure);
+      font-family: var(--font-family);
+      line-height: 1.5;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Latar Belakang Gradasi Kosmik Sinematik */
+    body {
+      background:
+        radial-gradient(circle at 50% 12%, rgba(30, 112, 227, 0.28) 0%, transparent 60%),
+        radial-gradient(circle at 85% 35%, rgba(16, 185, 129, 0.2) 0%, transparent 55%),
+        radial-gradient(circle at 15% 65%, rgba(245, 158, 11, 0.16) 0%, transparent 50%),
+        linear-gradient(180deg, #07172c 0%, #05101f 45%, #030811 100%);
+      position: relative;
+    }
+
+    /* Kanvas Grafis Real-Time 3D (Animasi Prosedural Kembang Api & Kosmik) */
+    #spectacular-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      display: block;
+    }
+
+    /* Lapisan Vignette Sinematik */
+    .vignette-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(3, 8, 17, 0.78) 100%);
+      mix-blend-mode: multiply;
+    }
+
+    /* Bilah Kontrol Audio di Kanan Atas */
+    .audio-control-bar {
+      position: fixed;
+      top: calc(1rem + env(safe-area-inset-top, 0px));
+      right: calc(1rem + env(safe-area-inset-right, 0px));
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .audio-btn {
+      background: rgba(11, 36, 71, 0.88);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      color: var(--gold-light);
+      padding: 0.45rem 0.95rem;
+      border-radius: 9999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45), 0 0 12px rgba(245, 158, 11, 0.2);
+      transition: all 0.2s ease;
+      min-height: 44px;
+      outline: none;
+    }
+
+    .audio-btn:hover {
+      background: rgba(16, 185, 129, 0.35);
+      border-color: var(--emerald);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+    }
+
+    .audio-btn:focus-visible {
+      outline: 2px solid var(--gold-light);
+      outline-offset: 2px;
+    }
+
+    .audio-icon {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
+    /* Wadah Utama Layar Penuh */
+    .viewport-container {
+      position: relative;
+      z-index: 10;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: clamp(1rem, 3vw, 2.5rem) clamp(0.75rem, 3vw, 2rem);
+      padding-top: calc(clamp(1.25rem, 3.5vw, 2.5rem) + env(safe-area-inset-top, 0px));
+      padding-bottom: calc(clamp(1.25rem, 3.5vw, 2.5rem) + env(safe-area-inset-bottom, 0px));
+      perspective: 1400px;
+    }
+
+    /* Kartu Portal Peluncuran 3D Spektakuler */
+    .portal-card {
+      width: 100%;
+      max-width: 900px;
+      margin: auto 0;
+      background: var(--glass-bg);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-glow);
+      border-radius: clamp(1.25rem, 3vw, 2rem);
+      padding: clamp(1.5rem, 4vw, 3.25rem) clamp(1rem, 3.5vw, 2.75rem);
+      box-shadow:
+        0 30px 80px -15px rgba(0, 0, 0, 0.85),
+        0 0 50px -10px var(--primary-blue-glow),
+        inset 0 1px 2px 0 rgba(255, 255, 255, 0.25),
+        inset 0 -2px 4px 0 rgba(16, 185, 129, 0.15);
+      text-align: center;
+      transform-style: preserve-3d;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
+      position: relative;
+    }
+
+    .portal-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 10%;
+      right: 10%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--primary-blue), var(--gold-light), var(--emerald), transparent);
+      border-radius: 3px;
+    }
+
+    /* ==========================================================================
+       LOGO RESMI PEMKAB LABUHANBATU SELATAN 3D
+       ========================================================================== */
+    .labusel-logo-container {
+      margin: 0 auto clamp(0.75rem, 1.8vw, 1.25rem);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      perspective: 800px;
+    }
+
+    .labusel-logo-card {
+      width: clamp(85px, 12vw, 115px);
+      height: clamp(100px, 14vw, 135px);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      background: radial-gradient(circle at 50% 30%, rgba(253, 230, 138, 0.25) 0%, rgba(11, 36, 71, 0.8) 75%);
+      border: 2px solid rgba(245, 158, 11, 0.65);
+      border-radius: 18px;
+      box-shadow:
+        0 12px 28px -4px rgba(0, 0, 0, 0.7),
+        0 0 25px rgba(245, 158, 11, 0.4),
+        0 0 15px rgba(30, 112, 227, 0.35);
+      transform-style: preserve-3d;
+      animation: floatLogo 4.5s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0) rotateY(0deg); }
+      50% { transform: translateY(-6px) rotateY(6deg); }
+    }
+
+    .labusel-logo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
+    }
+
+    /* Label Tag Resmi Instansi */
+    .agency-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: linear-gradient(135deg, rgba(30, 112, 227, 0.25) 0%, rgba(16, 185, 129, 0.25) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      color: var(--gold-shimmer);
+      font-size: clamp(0.75rem, 1.4vw, 0.86rem);
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.15rem;
+      border-radius: 9999px;
+      margin-bottom: clamp(0.75rem, 1.5vw, 1.15rem);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    }
+
+    .pulse-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold-light);
+      box-shadow: 0 0 12px var(--gold-light);
+      animation: pulseLight 1.8s infinite ease-in-out;
+    }
+
+    @keyframes pulseLight {
+      0%, 100% { transform: scale(0.9); opacity: 0.7; }
+      50% { transform: scale(1.3); opacity: 1; }
+    }
+
+    /* Teks Pembuka */
+    .welcome-lead {
+      color: #93c5fd;
+      font-size: clamp(0.95rem, 2vw, 1.2rem);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: clamp(0.4rem, 1vw, 0.65rem);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Judul Utama SIMELATI 3D Ekstrusi Sinematik Cerah & Berkilau */
+    .title-simelati-3d {
+      font-size: clamp(2.25rem, 8.5vw, 6rem);
+      font-weight: 900;
+      letter-spacing: clamp(0.02em, 1vw, 0.08em);
+      line-height: 1.04;
+      margin-bottom: clamp(0.5rem, 1.2vw, 0.85rem);
+      color: #ffffff;
+      background: linear-gradient(180deg, #ffffff 35%, #fffbeb 60%, #fde68a 80%, #f59e0b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 10px rgba(255, 255, 255, 0.6))
+              drop-shadow(0 6px 20px rgba(245, 158, 11, 0.65))
+              drop-shadow(0 12px 35px rgba(16, 185, 129, 0.4));
+      position: relative;
+      display: inline-block;
+      transform-style: preserve-3d;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+    }
+
+    /* Sub-instansi: DPMPTSP Kabupaten Labuhanbatu Selatan */
+    .sub-agency-title {
+      color: var(--gold-light);
+      font-size: clamp(0.92rem, 2.3vw, 1.45rem);
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: clamp(0.5rem, 1.2vw, 0.85rem);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* Kepanjangan Aplikasi */
+    .full-name-acronym {
+      color: var(--text-pure);
+      font-size: clamp(0.88rem, 1.9vw, 1.2rem);
+      font-weight: 600;
+      letter-spacing: 0.015em;
+      line-height: 1.45;
+      max-width: 720px;
+      margin: 0 auto clamp(0.85rem, 1.8vw, 1.25rem);
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* Slogan Resmi Berdasarkan Dashboard Asli */
+    .official-slogan-box {
+      background: linear-gradient(90deg, rgba(30, 112, 227, 0.15) 0%, rgba(16, 185, 129, 0.2) 50%, rgba(245, 158, 11, 0.15) 100%);
+      border: 1px dashed rgba(245, 158, 11, 0.55);
+      border-radius: 12px;
+      padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(0.75rem, 2vw, 1.25rem);
+      max-width: 650px;
+      margin: 0 auto clamp(1.25rem, 2.5vw, 1.75rem);
+      font-style: italic;
+      color: var(--gold-shimmer);
+      font-size: clamp(0.8rem, 1.8vw, 1.05rem);
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* Deskripsi Transformasi */
+    .mission-desc {
+      color: var(--text-muted);
+      font-size: clamp(0.88rem, 1.6vw, 1.05rem);
+      line-height: 1.65;
+      max-width: 660px;
+      margin: 0 auto clamp(1.5rem, 3vw, 2.25rem);
+    }
+
+    /* Pilar Layanan Administratif */
+    .pillars-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: clamp(0.5rem, 1.2vw, 0.85rem);
+      margin-bottom: clamp(1.75rem, 3.5vw, 2.5rem);
+    }
+
+    .pillar-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(11, 36, 71, 0.7);
+      border: 1px solid rgba(30, 112, 227, 0.35);
+      border-radius: 10px;
+      padding: 0.5rem 0.95rem;
+      font-size: clamp(0.75rem, 1.3vw, 0.85rem);
+      color: var(--text-silver);
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .pillar-chip span.ico {
+      color: var(--gold-light);
+    }
+
+    /* ==========================================================================
+       TOMBOL PELUNCURAN 3D HYPER-CINEMATIC
+       ========================================================================== */
+    .launch-btn-holder {
+      position: relative;
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .hyper-launch-btn {
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      background: linear-gradient(135deg, #1e70e3 0%, #059669 45%, #f59e0b 90%, #d97706 100%);
+      color: #ffffff;
+      font-family: inherit;
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: clamp(1.05rem, 2.2vw, 1.35rem) clamp(2.25rem, 4.5vw, 3.75rem);
+      min-height: 54px;
+      min-width: 250px;
+      border-radius: 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.95rem;
+      position: relative;
+      overflow: hidden;
+      outline: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      transform-style: preserve-3d;
+      transform: perspective(600px) translateZ(0);
+      box-shadow:
+        0 2px 0 rgba(255, 255, 255, 0.5) inset,
+        0 -4px 0 rgba(3, 10, 20, 0.9) inset,
+        0 10px 20px -2px rgba(30, 112, 227, 0.6),
+        0 20px 40px -4px rgba(0, 0, 0, 0.75),
+        0 0 35px rgba(245, 158, 11, 0.45);
+      transition:
+        transform 0.18s cubic-bezier(0.3, 0, 0.2, 1),
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+    }
+
+    .hyper-launch-btn::before {
+      content: "";
+      position: absolute;
+      top: -60%;
+      left: -70%;
+      width: 50%;
+      height: 220%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), rgba(253, 230, 138, 0.6), transparent);
+      transform: rotate(30deg);
+      pointer-events: none;
+      transition: left 0.75s ease;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .hyper-launch-btn:hover {
+        transform: perspective(600px) translateY(-4px) translateZ(12px);
+        filter: brightness(1.12);
+        box-shadow:
+          0 2px 0 rgba(255, 255, 255, 0.6) inset,
+          0 -4px 0 rgba(3, 10, 20, 0.9) inset,
+          0 15px 30px -2px rgba(30, 112, 227, 0.75),
+          0 28px 50px -4px rgba(0, 0, 0, 0.85),
+          0 0 50px rgba(245, 158, 11, 0.7);
+      }
+      .hyper-launch-btn:hover::before {
+        left: 130%;
+      }
+    }
+
+    .hyper-launch-btn:active {
+      transform: perspective(600px) translateY(3px) translateZ(0);
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.3) inset,
+        0 -1px 0 rgba(3, 10, 20, 0.9) inset,
+        0 5px 12px rgba(30, 112, 227, 0.5),
+        0 10px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .hyper-launch-btn:focus-visible {
+      outline: 3px solid var(--gold-light);
+      outline-offset: 4px;
+    }
+
+    .hyper-launch-btn:disabled {
+      cursor: not-allowed;
+      opacity: 0.92;
+      pointer-events: none;
+      filter: grayscale(0.2);
+    }
+
+    .rocket-svg-btn {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
+      transition: transform 0.3s ease;
+    }
+
+    /* ==========================================================================
+       LAYAR PERAYAAN LANGSUNG (CELEBRATION VIEW)
+       Langsung muncul seketika saat tombol ditekan, perayaan kembang api 1-5 detik,
+       kemudian setelah 5 detik baru masuk modul countdown loading.
+       ========================================================================== */
+    .celebration-view {
+      display: none;
+      opacity: 0;
+      transform: scale(0.92) translateY(20px);
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .celebration-view.active {
+      display: block;
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+
+    /* Pesan Utama Peluncuran Resmi */
+    .celebration-headline {
+      font-size: clamp(1.45rem, 5vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: clamp(0.75rem, 1.8vw, 1.25rem);
+      color: #ffffff;
+      background: linear-gradient(135deg, #ffffff 10%, #93c5fd 40%, #6ee7b7 70%, #fde68a 90%, #f59e0b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow:
+        0 4px 25px rgba(30, 112, 227, 0.6),
+        0 8px 45px rgba(245, 158, 11, 0.5);
+      word-break: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+    }
+
+    .celebration-subtext {
+      color: #e2e8f0;
+      font-size: clamp(1rem, 2.2vw, 1.35rem);
+      font-weight: 600;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto clamp(1.25rem, 2.5vw, 2rem);
+    }
+
+    /* Badge Status Resmi Peluncuran */
+    .status-active-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(16, 185, 129, 0.18);
+      border: 1px solid rgba(16, 185, 129, 0.5);
+      color: #6ee7b7;
+      font-size: clamp(0.8rem, 1.5vw, 0.92rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    }
+
+    /* KARTU COUNTDOWN & LOADING 3D (MUNCUL SETELAH 5 DETIK) */
+    .countdown-3d-card {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+      pointer-events: none;
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      background: rgba(7, 23, 44, 0.92);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      border-radius: 20px;
+      padding: clamp(1.5rem, 3vw, 2.25rem);
+      max-width: 640px;
+      margin: 0 auto clamp(1.25rem, 2.5vw, 2rem);
+      box-shadow:
+        0 15px 45px -5px rgba(0, 0, 0, 0.75),
+        0 0 35px rgba(30, 112, 227, 0.35),
+        inset 0 1px 2px rgba(255, 255, 255, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .countdown-3d-card.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .countdown-display-wrapper {
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .countdown-lead-label {
+      font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+      font-weight: 700;
+      color: #bae6fd;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Wadah Angka 3D Ekstrusi dengan Cincin Hologram */
+    .countdown-num-box {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.75rem;
+    }
+
+    .countdown-orbit-ring {
+      position: absolute;
+      inset: -8px;
+      border: 2px dashed rgba(245, 158, 11, 0.75);
+      border-radius: 50%;
+      animation: rotateRing 6s linear infinite;
+    }
+
+    @keyframes rotateRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .countdown-glow-disk {
+      position: absolute;
+      inset: 4px;
+      background: radial-gradient(circle, rgba(30, 112, 227, 0.4) 0%, rgba(16, 185, 129, 0.25) 60%, transparent 80%);
+      border-radius: 50%;
+    }
+
+    .countdown-seconds-3d {
+      font-size: 3.8rem;
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+      color: #ffffff;
+      background: linear-gradient(180deg, #ffffff 0%, #fde68a 60%, #f59e0b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(245, 158, 11, 0.8);
+      position: relative;
+      z-index: 2;
+      transition: transform 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
+    .countdown-seconds-3d.tick {
+      transform: scale(1.35) rotateY(15deg);
+    }
+
+    .countdown-bottom-note {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Batang Progres Sinematik */
+    .progress-bar-track {
+      width: 100%;
+      height: 14px;
+      background: rgba(11, 36, 71, 0.9);
+      border-radius: 9999px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      position: relative;
+      margin-bottom: 0.75rem;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .progress-bar-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #1e70e3 0%, #10b981 40%, #f59e0b 80%, #fde68a 100%);
+      border-radius: 9999px;
+      box-shadow: 0 0 16px rgba(245, 158, 11, 0.9), 0 0 8px rgba(16, 185, 129, 0.8);
+      transition: width 0.1s linear;
+      position: relative;
+    }
+
+    .progress-bar-fill::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 25px;
+      background: #ffffff;
+      opacity: 0.8;
+      filter: blur(3px);
+    }
+
+    .progress-percent-label {
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    /* Tautan Masuk Aplikasi Langsung */
+    .direct-link-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(135deg, rgba(30, 112, 227, 0.35) 0%, rgba(245, 158, 11, 0.38) 100%);
+      border: 1.5px solid var(--gold-light);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      padding: 0.95rem 2.25rem;
+      min-height: 48px;
+      border-radius: 14px;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(245, 158, 11, 0.35);
+    }
+
+    .direct-link-btn:hover {
+      background: linear-gradient(135deg, rgba(30, 112, 227, 0.45) 0%, rgba(245, 158, 11, 0.5) 100%);
+      border-color: #ffffff;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.5);
+    }
+
+    .direct-link-btn:focus-visible {
+      outline: 3px solid var(--gold-light);
+      outline-offset: 4px;
+    }
+
+    /* Peringatan Konfigurasi */
+    .config-alert-card {
+      display: none;
+      background: rgba(185, 28, 28, 0.25);
+      border: 1px solid rgba(239, 68, 68, 0.6);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      color: #fca5a5;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-top: 1rem;
+      text-align: left;
+    }
+
+    /* Footer Informasi Pemerintah Resmi */
+    .portal-footer {
+      margin-top: clamp(1.5rem, 3.5vw, 2.75rem);
+      text-align: center;
+      color: #94a3b8;
+      font-size: clamp(0.75rem, 1.4vw, 0.85rem);
+      letter-spacing: 0.02em;
+    }
+
+    .portal-footer strong {
+      color: var(--gold-shimmer);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    /* ==========================================================================
+       MEDIA QUERIES RESPONSIF LENGKAP
+       Mendukung: Desktop/Laptop, Tablet, HP Standar, HP Ringkas (320px),
+       serta Tampilan HP Mode Lanskap (Landscape)
+       ========================================================================== */
+
+    /* Tablet & Layar Menengah (<= 768px) */
+    @media (max-width: 768px) {
+      .portal-card {
+        padding: 1.75rem 1.35rem;
+      }
+      .pillars-container {
+        gap: 0.5rem;
+      }
+      .pillar-chip {
+        font-size: 0.78rem;
+        padding: 0.4rem 0.75rem;
+      }
+    }
+
+    /* Smartphone Standar (<= 480px) */
+    @media (max-width: 480px) {
+      .audio-control-bar {
+        top: calc(0.6rem + env(safe-area-inset-top, 0px));
+        right: calc(0.6rem + env(safe-area-inset-right, 0px));
+      }
+      .audio-btn {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.75rem;
+        min-height: 38px;
+      }
+      .portal-card {
+        padding: 1.35rem 0.95rem;
+        border-radius: 1.25rem;
+      }
+      .pillars-container {
+        display: none; /* Merampingkan agar tidak menumpuk di HP */
+      }
+      .hyper-launch-btn {
+        width: 100%;
+        min-width: unset;
+        padding: 1rem 1.15rem;
+        font-size: 1.05rem;
+      }
+      .direct-link-btn {
+        width: 100%;
+        min-width: unset;
+        padding: 0.85rem 1.15rem;
+        font-size: 0.95rem;
+      }
+      .countdown-3d-card {
+        padding: 1.15rem 0.95rem;
+      }
+    }
+
+    /* Layar Sangat Sempit (320px - 360px, e.g. iPhone SE 1st gen, Galaxy Fold) */
+    @media (max-width: 360px) {
+      .viewport-container {
+        padding: 0.75rem 0.5rem;
+      }
+      .portal-card {
+        padding: 1.15rem 0.75rem;
+      }
+      .labusel-logo-card {
+        width: 70px;
+        height: 85px;
+      }
+      .title-simelati-3d {
+        font-size: 2.1rem;
+        letter-spacing: 0.02em;
+      }
+      .celebration-headline {
+        font-size: 1.35rem;
+      }
+      .countdown-num-box {
+        width: 80px;
+        height: 80px;
+      }
+      .countdown-seconds-3d {
+        font-size: 2.9rem;
+      }
+      .agency-tag {
+        font-size: 0.7rem;
+        padding: 0.35rem 0.8rem;
+      }
+    }
+
+    /* Mode Lanskap HP dengan Tinggi Layar Terbatas (Height <= 560px) */
+    @media (max-height: 560px) and (orientation: landscape) {
+      .viewport-container {
+        padding-top: calc(0.5rem + env(safe-area-inset-top, 0px));
+        padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+      }
+      .portal-card {
+        padding: 1rem 1.5rem;
+      }
+      .labusel-logo-container {
+        margin-bottom: 0.35rem;
+      }
+      .labusel-logo-card {
+        width: 55px;
+        height: 68px;
+      }
+      .title-simelati-3d {
+        font-size: 2rem;
+        margin-bottom: 0.25rem;
+      }
+      .sub-agency-title {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+      }
+      .full-name-acronym {
+        font-size: 0.82rem;
+        margin-bottom: 0.4rem;
+      }
+      .official-slogan-box {
+        font-size: 0.75rem;
+        padding: 0.35rem 0.75rem;
+        margin-bottom: 0.6rem;
+      }
+      .mission-desc {
+        display: none; /* Disembunyikan pada lanskap rendah agar tombol langsung terlihat */
+      }
+      .pillars-container {
+        display: none;
+      }
+      .hyper-launch-btn {
+        padding: 0.75rem 1.75rem;
+        min-height: 44px;
+        font-size: 0.95rem;
+      }
+      .countdown-3d-card {
+        padding: 0.85rem 1.25rem;
+        margin-bottom: 0.65rem;
+      }
+      .countdown-num-box {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 0.35rem;
+      }
+      .countdown-seconds-3d {
+        font-size: 2.3rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+      .portal-card, .hyper-launch-btn, .labusel-logo-card {
+        transform: none !important;
+        transition: none !important;
+      }
+      .pulse-indicator, .countdown-orbit-ring {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Kanvas Grafis Real-Time 3D & Sistem Kembang Api Prosedural -->
+  <canvas id="spectacular-canvas" aria-hidden="true"></canvas>
+
+  <!-- Lapisan Pencahayaan Sinematik -->
+  <div class="vignette-overlay" aria-hidden="true"></div>
+
+  <!-- Bilah Pengaturan Suara Petasan & Audio Perayaan -->
+  <aside class="audio-control-bar" aria-label="Kontrol Audio Perayaan">
+    <button type="button" id="toggleAudioBtn" class="audio-btn" aria-label="Beralih Suara Petasan">
+      <!-- Ikon Speaker Aktif -->
+      <svg id="speakerIconOn" class="audio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+      </svg>
+      <!-- Ikon Speaker Bisu -->
+      <svg id="speakerIconOff" class="audio-icon" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <line x1="23" y1="9" x2="17" y2="15"></line>
+        <line x1="17" y1="9" x2="23" y2="15"></line>
+      </svg>
+      <span id="audioBtnText">Suara: AKTIF</span>
+    </button>
+  </aside>
+
+  <!-- Area Live Region untuk Aksesibilitas Pembaca Layar -->
+  <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Pembungkus Tampilan Utama -->
+  <main class="viewport-container">
+    <div class="portal-card" id="portalCard">
+
+      <!-- TAMPILAN AWAL (SEBELUM DILUNCURKAN) -->
+      <section id="initialView" aria-label="Gerbang Peluncuran SIMELATI DPMPTSP Labuhanbatu Selatan">
+
+        <!-- LOGO RESMI PEMKAB LABUHANBATU SELATAN DENGAN KARTU 3D -->
+        <div class="labusel-logo-container" aria-hidden="true">
+          <div class="labusel-logo-card">
+            <img src="/assets/aistudio/logo_labusel_84559537.png" alt="Logo Resmi Pemerintah Kabupaten Labuhanbatu Selatan" class="labusel-logo-img" onerror="this.src='/public/assets/aistudio/logo_labusel_84559537.png'" />
+          </div>
+        </div>
+
+        <!-- 1. Label Tag Resmi -->
+        <div>
+          <span class="agency-tag">
+            <span class="pulse-indicator" aria-hidden="true"></span>
+            PELUNCURAN RESMI APLIKASI
+          </span>
+        </div>
+
+        <!-- 2. Teks Pembuka -->
+        <p class="welcome-lead">Selamat Datang di Peluncuran Resmi</p>
+
+        <!-- 3. Nama SIMELATI 3D Berukuran Besar -->
+        <h1 class="title-simelati-3d" id="mainTitle">SIMELATI</h1>
+
+        <!-- Identitas Instansi Terverifikasi -->
+        <h2 class="sub-agency-title">DPMPTSP LABUHANBATU SELATAN</h2>
+
+        <!-- 4. Kepanjangan Aplikasi -->
+        <p class="full-name-acronym">
+          Sistem Informasi Manajemen Layanan Administrasi dan Tata Usaha Internal
+        </p>
+
+        <!-- Slogan Resmi & Motto Labusel -->
+        <div class="official-slogan-box" aria-hidden="true">
+          “Santun Berkata - Bijak Berkarya &bull; Pelayanan Cepat, Transparan, dan Terpercaya”
+        </div>
+
+        <!-- 5. Deskripsi Transformasi -->
+        <p class="mission-desc">
+          Transformasi layanan administrasi dan tata usaha internal menuju pelayanan yang lebih cepat, tertib, transparan, dan terintegrasi secara digital.
+        </p>
+
+        <!-- Pilar Fitur Resmi -->
+        <div class="pillars-container" aria-hidden="true">
+          <div class="pillar-chip"><span class="ico">✉️</span> Surat Menyurat & Disposisi</div>
+          <div class="pillar-chip"><span class="ico">📋</span> Layanan Tata Usaha</div>
+          <div class="pillar-chip"><span class="ico">📦</span> Inventaris & ATK</div>
+          <div class="pillar-chip"><span class="ico">📅</span> Agenda & Kalender Kerja</div>
+          <div class="pillar-chip"><span class="ico">📁</span> Arsip Digital Terpadu</div>
+        </div>
+
+        <!-- 6. Tombol Utama Spektakuler -->
+        <div class="launch-btn-holder">
+          <button type="button" class="hyper-launch-btn" id="launchButton" aria-describedby="launchDescription">
+            <!-- Ikon Vektor Roket Peluncuran 3D -->
+            <svg class="rocket-svg-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+              <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+            </svg>
+            <span>LUNCURKAN APLIKASI</span>
+          </button>
+          <span id="launchDescription" class="sr-only">Menekan tombol ini akan langsung memicu perayaan kembang api megah seketika, suara petasan meriah, dan pengalihan ke aplikasi SIMELATI.</span>
+        </div>
+
+      </section>
+
+      <!-- TAMPILAN PERAYAAN (LANGSUNG AKTIF SEKETIKA BEGITU TOMBOL DIKLIK) -->
+      <section id="celebrationView" class="celebration-view" aria-label="Perayaan Peluncuran Aplikasi Resmi SIMELATI" aria-hidden="true">
+        
+        <!-- Logo Labusel Mini di Layar Perayaan -->
+        <div class="labusel-logo-container" style="margin-bottom: 0.75rem;" aria-hidden="true">
+          <div class="labusel-logo-card" style="width: 75px; height: 90px;">
+            <img src="/assets/aistudio/logo_labusel_84559537.png" alt="Logo Labusel" class="labusel-logo-img" />
+          </div>
+        </div>
+
+        <!-- 6. Pesan Utama Peluncuran -->
+        <h1 class="celebration-headline" id="celebrationHeadline" tabindex="-1">
+          SELAMAT! APLIKASI SIMELATI TELAH RESMI DILUNCURKAN
+        </h1>
+
+        <!-- Status Terverifikasi -->
+        <div>
+          <span class="status-active-badge">
+            <span class="pulse-indicator" style="background:#10b981; box-shadow:0 0 10px #10b981;" aria-hidden="true"></span>
+            STATUS: RESMI BEROPERASI &bull; DPMPTSP LABUHANBATU SELATAN
+          </span>
+        </div>
+
+        <!-- 7. Teks Pendukung -->
+        <p class="celebration-subtext">
+          Langkah baru menuju layanan administrasi yang lebih efektif, tertib, dan terintegrasi di lingkungan DPMPTSP Kabupaten Labuhanbatu Selatan.
+        </p>
+
+        <!-- 8. & 9. Efek Hitung Mundur 3D & Progress Bar (MUNCUL OTOMATIS SETELAH 5 DETIK PERAYAAN) -->
+        <div class="countdown-3d-card" id="countdownCard">
+          <div class="countdown-display-wrapper">
+            <span class="countdown-lead-label">MENGHUBUNGKAN ANDA KE PORTAL RESMI SIMELATI DALAM:</span>
+            
+            <!-- Ornamen Cincin Hologram & Angka 3D Ekstrusi -->
+            <div class="countdown-num-box" aria-hidden="true">
+              <div class="countdown-orbit-ring"></div>
+              <div class="countdown-glow-disk"></div>
+              <span class="countdown-seconds-3d" id="countdownSeconds">5</span>
+            </div>
+
+            <span class="countdown-bottom-note" id="countdownNote">Sistem Sedang Menyiapkan Sesi Layanan...</span>
+          </div>
+
+          <!-- Batang Progres Sinematik Berkilau -->
+          <div class="progress-bar-track" role="progressbar" id="progressBarTrack" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progres menuju aplikasi">
+            <div class="progress-bar-fill" id="progressBarFill"></div>
+          </div>
+          <div class="progress-percent-label" id="progressPercentLabel">0%</div>
+
+          <!-- Peringatan jika konfigurasi URL bermasalah -->
+          <div id="configNotice" class="config-alert-card" role="alert"></div>
+        </div>
+
+        <!-- 10. Tautan Masuk ke Aplikasi Sekarang -->
+        <div style="margin-top: 1.25rem;">
+          <a id="directLink" href="#" class="direct-link-btn" rel="noopener noreferrer">
+            <span>Masuk ke Aplikasi Sekarang</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+      </section>
+
+      <!-- Catatan Kaki Resmi Berdasarkan Motto Dashboard -->
+      <footer class="portal-footer">
+        <p><strong>Pemerintah Kabupaten Labuhanbatu Selatan</strong> &bull; DPMPTSP SIMELATI</p>
+        <p style="margin-top: 0.35rem; font-style: italic; opacity: 0.85;">“Santun Berkata - Bijak Berkarya &bull; Melayani dengan Integritas”</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Fallback jika JavaScript Dimatikan Pada Peramban -->
+  <noscript>
+    <div style="position: fixed; inset: 0; background: #040c17; color: #fff; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center;">
+      <h1 style="color: #f59e0b; margin-bottom: 1rem;">Peluncuran Resmi SIMELATI</h1>
+      <p style="max-width: 600px; margin-bottom: 1.5rem; color: #94a3b8;">
+        Sistem Informasi Manajemen Layanan Administrasi dan Tata Usaha Internal DPMPTSP Kabupaten Labuhanbatu Selatan.
+      </p>
+      <a href="https://simelati.labuhanbatuselatankab.go.id/" style="background: #1e70e3; color: #fff; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 8px; font-weight: bold;">
+        Buka Aplikasi SIMELATI Langsung
+      </a>
+    </div>
+  </noscript>
+
+  <!-- ==========================================================================
+       LOGIKA APLIKASI: ANIMASI 3D SPEKTAKULER, SUARA PETASAN WEB AUDIO API,
+       KEMBANG API INSTAN 1-5 DETIK, COUNTDOWN LOADING 5-10 DETIK
+       ========================================================================== -->
+  <script>
+    /**
+     * ==========================================================================
+     * 1. KONFIGURASI RESMI APLIKASI & TIMELINE PELUNCURAN
+     * ==========================================================================
+     * - Detik 0 s.d. 5: Ledakan kembang api seketika, suara petasan meriah,
+     *   layar SELAMAT APLIKASI TELAH RESMI DILUNCURKAN langsung tampil penuh sukacita.
+     * - Detik 5 s.d. 10: Modul countdown 3D (5..4..3..2..1..0) dan progress loading
+     *   muncul menuju pengalihan ke portal SIMELATI.
+     */
+    const APP_URL = "https://simelati.labuhanbatuselatankab.go.id/";
+    const TOTAL_DURATION_MS = 10000;
+    const CELEBRATION_PURE_MS = 5000; // 5 detik pertama fokus perayaan kembang api
+
+    const SIMULATION_CONFIG = {
+      gravity: 0.046,
+      airDrag: 0.981,
+      maxParticlesDesktop: 1200,
+      maxParticlesMobile: 600
+    };
+
+    /**
+     * Validasi URL Aplikasi Resmi
+     */
+    function validateAppUrl(urlStr) {
+      if (!urlStr || typeof urlStr !== 'string') {
+        return { valid: false, message: 'Alamat URL aplikasi kosong atau tidak valid.' };
+      }
+      try {
+        const parsed = new URL(urlStr);
+        if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
+          return { valid: false, message: 'Protokol URL tidak sah. Hanya protokol HTTP atau HTTPS yang diizinkan.' };
+        }
+        const host = parsed.hostname.toLowerCase();
+        const invalidHosts = ['example.com', 'localhost', '127.0.0.1', 'url_aplikasi_anda'];
+        if (!host || invalidHosts.some(inv => host.includes(inv))) {
+          return { valid: false, message: 'Alamat URL aplikasi masih berupa nilai placeholder (' + host + '). Diperlukan URL resmi.' };
+        }
+        return { valid: true, url: parsed.href };
+      } catch (err) {
+        return { valid: false, message: 'Format penulisan URL aplikasi tidak valid.' };
+      }
+    }
+
+    const urlValidation = validateAppUrl(APP_URL);
+
+    // Seleksi Elemen Antarmuka
+    const canvas = document.getElementById('spectacular-canvas');
+    const ctx = canvas.getContext('2d');
+    const portalCard = document.getElementById('portalCard');
+    const initialView = document.getElementById('initialView');
+    const celebrationView = document.getElementById('celebrationView');
+    const countdownCard = document.getElementById('countdownCard');
+    const launchButton = document.getElementById('launchButton');
+    const countdownSecondsEl = document.getElementById('countdownSeconds');
+    const countdownNoteEl = document.getElementById('countdownNote');
+    const progressBarFill = document.getElementById('progressBarFill');
+    const progressPercentLabel = document.getElementById('progressPercentLabel');
+    const progressBarTrack = document.getElementById('progressBarTrack');
+    const directLink = document.getElementById('directLink');
+    const configNotice = document.getElementById('configNotice');
+    const celebrationHeadline = document.getElementById('celebrationHeadline');
+    const srAnnouncer = document.getElementById('sr-announcer');
+    const toggleAudioBtn = document.getElementById('toggleAudioBtn');
+    const speakerIconOn = document.getElementById('speakerIconOn');
+    const speakerIconOff = document.getElementById('speakerIconOff');
+    const audioBtnText = document.getElementById('audioBtnText');
+
+    // State Peluncuran
+    let isLaunching = false;
+    let launchStartTime = 0;
+    let launchEndTime = 0;
+    let animFrameId = null;
+    let celebrationNavigated = false;
+    let isAudioEnabled = true;
+    let countdownRevealed = false;
+
+    // Preferensi Pengurangan Gerakan
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Resolusi & Dimensi Kanvas
+    let width = 0;
+    let height = 0;
+    let dpr = 1;
+    let isMobile = false;
+
+    function resizeCanvas() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      canvas.style.width = width + 'px';
+      canvas.style.height = height + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      isMobile = width < 768;
+    }
+    window.addEventListener('resize', resizeCanvas, { passive: true });
+    window.addEventListener('orientationchange', () => {
+      setTimeout(resizeCanvas, 80);
+    }, { passive: true });
+    resizeCanvas();
+
+    // Tautan Langsung & Validasi
+    if (urlValidation.valid) {
+      directLink.href = urlValidation.url;
+    } else {
+      directLink.href = '#';
+      directLink.style.opacity = '0.5';
+      directLink.style.cursor = 'not-allowed';
+      directLink.setAttribute('aria-disabled', 'true');
+      configNotice.style.display = 'block';
+      configNotice.textContent = 'Pemberitahuan Konfigurasi: ' + urlValidation.message;
+    }
+
+    directLink.addEventListener('click', (e) => {
+      if (!urlValidation.valid) {
+        e.preventDefault();
+        return;
+      }
+      if (isLaunching) {
+        celebrationNavigated = true;
+        if (animFrameId) cancelAnimationFrame(animFrameId);
+        window.location.replace(urlValidation.url);
+      }
+    });
+
+    /**
+     * ==========================================================================
+     * 2. SISTEM SUARA PETASAN & KEMBANG API SPEKTAKULER (WEB AUDIO API)
+     * ==========================================================================
+     */
+    let audioCtx = null;
+
+    function getAudioContext() {
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (AudioContextClass) {
+          audioCtx = new AudioContextClass();
+        }
+      }
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      return audioCtx;
+    }
+
+    // Toggle Tombol Audio
+    toggleAudioBtn.addEventListener('click', () => {
+      isAudioEnabled = !isAudioEnabled;
+      if (isAudioEnabled) {
+        speakerIconOn.style.display = 'inline-block';
+        speakerIconOff.style.display = 'none';
+        audioBtnText.textContent = 'Suara: AKTIF';
+        getAudioContext();
+      } else {
+        speakerIconOn.style.display = 'none';
+        speakerIconOff.style.display = 'inline-block';
+        audioBtnText.textContent = 'Suara: BISU';
+      }
+    });
+
+    /**
+     * Efek Suara: Dentuman Ledakan Petasan Besar (Boom Sub-Bass)
+     */
+    function playFireworkBoomSound(pitchMultiplier = 1, volume = 0.5) {
+      if (!isAudioEnabled) return;
+      const ctxA = getAudioContext();
+      if (!ctxA) return;
+
+      const now = ctxA.currentTime;
+
+      // 1. Sub-bass punch
+      const osc = ctxA.createOscillator();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(140 * pitchMultiplier, now);
+      osc.frequency.exponentialRampToValueAtTime(26, now + 0.75);
+
+      const oscGain = ctxA.createGain();
+      oscGain.gain.setValueAtTime(volume * 0.95, now);
+      oscGain.gain.exponentialRampToValueAtTime(0.001, now + 0.9);
+
+      osc.connect(oscGain);
+      oscGain.connect(ctxA.destination);
+
+      osc.start(now);
+      osc.stop(now + 0.92);
+
+      // 2. Punch Noise Blast
+      const bufferSize = Math.floor(ctxA.sampleRate * 0.65);
+      const buffer = ctxA.createBuffer(1, bufferSize, ctxA.sampleRate);
+      const data = buffer.getChannelData(0);
+      for (let i = 0; i < bufferSize; i++) {
+        data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (ctxA.sampleRate * 0.14));
+      }
+
+      const noise = ctxA.createBufferSource();
+      noise.buffer = buffer;
+
+      const filter = ctxA.createBiquadFilter();
+      filter.type = 'lowpass';
+      filter.frequency.setValueAtTime(1000 * pitchMultiplier, now);
+      filter.frequency.linearRampToValueAtTime(160, now + 0.55);
+
+      const noiseGain = ctxA.createGain();
+      noiseGain.gain.setValueAtTime(volume * 0.8, now);
+      noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.65);
+
+      noise.connect(filter);
+      filter.connect(noiseGain);
+      noiseGain.connect(ctxA.destination);
+
+      noise.start(now);
+      noise.stop(now + 0.7);
+    }
+
+    /**
+     * Efek Suara: Gemeretak Rentetan Petasan Meriah (Barrage Crackles)
+     */
+    function playFireworkCrackleSound(burstCount = 8) {
+      if (!isAudioEnabled) return;
+      const ctxA = getAudioContext();
+      if (!ctxA) return;
+
+      const baseNow = ctxA.currentTime;
+      for (let i = 0; i < burstCount; i++) {
+        const offset = 0.08 + Math.random() * 0.6;
+        const clickTime = baseNow + offset;
+
+        const bufferSize = Math.floor(ctxA.sampleRate * 0.045);
+        const buffer = ctxA.createBuffer(1, bufferSize, ctxA.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let j = 0; j < bufferSize; j++) {
+          data[j] = (Math.random() * 2 - 1) * Math.exp(-j / (ctxA.sampleRate * 0.009));
+        }
+
+        const source = ctxA.createBufferSource();
+        source.buffer = buffer;
+
+        const filter = ctxA.createBiquadFilter();
+        filter.type = 'highpass';
+        filter.frequency.value = 1500 + Math.random() * 1400;
+
+        const gain = ctxA.createGain();
+        gain.gain.setValueAtTime(0.22 + Math.random() * 0.18, clickTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, clickTime + 0.045);
+
+        source.connect(filter);
+        filter.connect(gain);
+        gain.connect(ctxA.destination);
+
+        source.start(clickTime);
+        source.stop(clickTime + 0.05);
+      }
+    }
+
+    /**
+     * Efek Suara: Denting Nada Kemenangan Kristal (Victory Fanfare Chimes)
+     */
+    function playCelebrationChimes() {
+      if (!isAudioEnabled) return;
+      const ctxA = getAudioContext();
+      if (!ctxA) return;
+
+      const now = ctxA.currentTime;
+      const freqs = [523.25, 659.25, 783.99, 1046.50, 1318.51];
+      freqs.forEach((freq, idx) => {
+        const noteTime = now + idx * 0.12;
+        const osc = ctxA.createOscillator();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, noteTime);
+
+        const gain = ctxA.createGain();
+        gain.gain.setValueAtTime(0.001, noteTime);
+        gain.gain.linearRampToValueAtTime(0.18, noteTime + 0.04);
+        gain.gain.exponentialRampToValueAtTime(0.0001, noteTime + 1.4);
+
+        osc.connect(gain);
+        gain.connect(ctxA.destination);
+
+        osc.start(noteTime);
+        osc.stop(noteTime + 1.5);
+      });
+    }
+
+    /**
+     * ==========================================================================
+     * 3. SISTEM PARTIKEL 3D REAL-TIME (ANIMASI BERGAYA VIDEO PROSEDURAL)
+     * ==========================================================================
+     */
+    const camera = {
+      x: 0,
+      y: 0,
+      fov: 420
+    };
+
+    class DeepSpaceLumen {
+      constructor() {
+        this.reset(true);
+      }
+      reset(init = false) {
+        this.x = (Math.random() - 0.5) * (width * 1.8);
+        this.y = (Math.random() - 0.5) * (height * 1.8);
+        this.z = init ? Math.random() * 950 + 50 : 1000;
+        this.vz = Math.random() * 0.6 + 0.3;
+        this.size = Math.random() * 2.4 + 0.8;
+        this.type = Math.random();
+        this.alpha = Math.random() * 0.7 + 0.3;
+        this.pulse = Math.random() * Math.PI;
+      }
+      update(dt) {
+        this.z -= this.vz * (dt * 0.06);
+        this.pulse += 0.025;
+        if (this.z <= 30) this.reset(false);
+      }
+      draw(ctx, cx, cy) {
+        const factor = camera.fov / this.z;
+        const sx = cx + (this.x - camera.x) * factor;
+        const sy = cy + (this.y - camera.y) * factor;
+        const r = this.size * factor;
+
+        if (sx < -20 || sx > width + 20 || sy < -20 || sy > height + 20) return;
+
+        const a = (this.alpha * (0.8 + 0.2 * Math.sin(this.pulse))) * Math.min(1, (1000 - this.z) / 200);
+        ctx.beginPath();
+        ctx.arc(sx, sy, Math.max(0.6, r), 0, Math.PI * 2);
+
+        if (this.type > 0.7) {
+          ctx.fillStyle = `rgba(253, 230, 138, ${a})`;
+        } else if (this.type > 0.4) {
+          ctx.fillStyle = `rgba(147, 197, 253, ${a})`;
+        } else if (this.type > 0.2) {
+          ctx.fillStyle = `rgba(110, 231, 183, ${a})`;
+        } else {
+          ctx.fillStyle = `rgba(255, 255, 255, ${a})`;
+        }
+        ctx.fill();
+      }
+    }
+
+    class Rotating3DGeometry {
+      constructor() {
+        this.x = (Math.random() - 0.5) * width * 0.9;
+        this.y = (Math.random() - 0.5) * height * 0.9;
+        this.z = Math.random() * 600 + 200;
+        this.rotX = Math.random() * Math.PI;
+        this.rotY = Math.random() * Math.PI;
+        this.vRotX = (Math.random() - 0.5) * 0.01;
+        this.vRotY = (Math.random() - 0.5) * 0.012;
+        this.radius = Math.random() * 40 + 25;
+        this.sides = Math.random() > 0.5 ? 6 : 8;
+      }
+      update() {
+        this.rotX += this.vRotX;
+        this.rotY += this.vRotY;
+      }
+      draw(ctx, cx, cy) {
+        const factor = camera.fov / this.z;
+        const sx = cx + (this.x - camera.x) * factor;
+        const sy = cy + (this.y - camera.y) * factor;
+        const rad = this.radius * factor;
+
+        ctx.save();
+        ctx.translate(sx, sy);
+        ctx.beginPath();
+        for (let i = 0; i <= this.sides; i++) {
+          const theta = (i / this.sides) * Math.PI * 2 + this.rotX;
+          const px = Math.cos(theta) * rad;
+          const py = Math.sin(theta) * rad * Math.cos(this.rotY);
+          if (i === 0) ctx.moveTo(px, py);
+          else ctx.lineTo(px, py);
+        }
+        ctx.strokeStyle = 'rgba(30, 112, 227, 0.15)';
+        ctx.lineWidth = 1.3;
+        ctx.stroke();
+        ctx.restore();
+      }
+    }
+
+    const lumenCount = isMobile ? 80 : 160;
+    const lumens = Array.from({ length: lumenCount }, () => new DeepSpaceLumen());
+    const geoms3D = Array.from({ length: isMobile ? 3 : 6 }, () => new Rotating3DGeometry());
+
+    let ribbonTime = 0;
+    function drawAuroraRibbons(ctx, width, height) {
+      ribbonTime += 0.009;
+      ctx.save();
+      ctx.globalCompositeOperation = 'lighter';
+
+      ctx.beginPath();
+      ctx.moveTo(0, height * 0.7);
+      for (let x = 0; x <= width; x += 35) {
+        const y = height * 0.68 + Math.sin(x * 0.003 + ribbonTime) * 40 + Math.cos(x * 0.002 - ribbonTime * 0.8) * 30;
+        ctx.lineTo(x, y);
+      }
+      ctx.lineTo(width, height);
+      ctx.lineTo(0, height);
+      ctx.closePath();
+      const gradBlue = ctx.createLinearGradient(0, height * 0.55, 0, height);
+      gradBlue.addColorStop(0, 'rgba(30, 112, 227, 0.06)');
+      gradBlue.addColorStop(0.7, 'rgba(16, 185, 129, 0.08)');
+      gradBlue.addColorStop(1, 'transparent');
+      ctx.fillStyle = gradBlue;
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.moveTo(0, height * 0.78);
+      for (let x = 0; x <= width; x += 45) {
+        const y = height * 0.76 + Math.cos(x * 0.0025 + ribbonTime * 1.3) * 35 + Math.sin(x * 0.0035 - ribbonTime) * 22;
+        ctx.lineTo(x, y);
+      }
+      ctx.lineTo(width, height);
+      ctx.lineTo(0, height);
+      ctx.closePath();
+      const gradGold = ctx.createLinearGradient(0, height * 0.65, 0, height);
+      gradGold.addColorStop(0, 'rgba(245, 158, 11, 0.05)');
+      gradGold.addColorStop(0.8, 'rgba(217, 119, 6, 0.08)');
+      gradGold.addColorStop(1, 'transparent');
+      ctx.fillStyle = gradGold;
+      ctx.fill();
+
+      ctx.restore();
+    }
+
+    /**
+     * ==========================================================================
+     * 4. GELOMBANG KEJUT, KEMBANG API & CONFETTI 3D
+     * ==========================================================================
+     */
+    class ShockwaveRing {
+      constructor(x, y, maxR, color) {
+        this.x = x;
+        this.y = y;
+        this.r = 10;
+        this.maxR = maxR;
+        this.color = color;
+        this.alpha = 1;
+        this.speed = (maxR - 10) / 25;
+      }
+      update() {
+        this.r += this.speed;
+        this.alpha = Math.max(0, 1 - (this.r / this.maxR));
+      }
+      draw(ctx) {
+        if (this.alpha <= 0) return;
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+        ctx.strokeStyle = this.color.replace('ALPHA', (this.alpha * 0.7).toFixed(3));
+        ctx.lineWidth = Math.max(1, (1 - this.r / this.maxR) * 6);
+        ctx.stroke();
+        ctx.restore();
+      }
+    }
+
+    class FireworkParticle3D {
+      constructor(x, y, z, vx, vy, vz, color, opts = {}) {
+        this.x = x;
+        this.y = y;
+        this.z = z || 0;
+        this.vx = vx;
+        this.vy = vy;
+        this.vz = vz || 0;
+        this.color = color;
+        this.alpha = 1;
+        this.decay = opts.decay || (Math.random() * 0.017 + 0.012);
+        this.size = opts.size || (Math.random() * 2.8 + 1.8);
+        this.gravity = opts.gravity !== undefined ? opts.gravity : SIMULATION_CONFIG.gravity;
+        this.drag = opts.drag || SIMULATION_CONFIG.airDrag;
+        this.trail = [];
+        this.maxTrail = opts.isWillow ? 8 : 4;
+      }
+      update() {
+        this.trail.push({ x: this.x, y: this.y, z: this.z, alpha: this.alpha });
+        if (this.trail.length > this.maxTrail) this.trail.shift();
+
+        this.vx *= this.drag;
+        this.vy *= this.drag;
+        this.vz *= this.drag;
+        this.vy += this.gravity;
+
+        this.x += this.vx;
+        this.y += this.vy;
+        this.z += this.vz;
+
+        this.alpha -= this.decay;
+      }
+      draw(ctx, cx, cy) {
+        if (this.alpha <= 0) return;
+        const factor = camera.fov / (camera.fov + this.z * 0.5);
+        const sx = cx + (this.x - cx) * factor;
+        const sy = cy + (this.y - cy) * factor;
+        const r = Math.max(0.7, this.size * factor);
+
+        if (this.trail.length > 1) {
+          ctx.beginPath();
+          ctx.moveTo(sx, sy);
+          for (let i = this.trail.length - 1; i >= 0; i--) {
+            const tp = this.trail[i];
+            const tfactor = camera.fov / (camera.fov + tp.z * 0.5);
+            ctx.lineTo(cx + (tp.x - cx) * tfactor, cy + (tp.y - cy) * tfactor);
+          }
+          ctx.strokeStyle = this.color.replace('ALPHA', (this.alpha * 0.55).toFixed(3));
+          ctx.lineWidth = r * 0.85;
+          ctx.stroke();
+        }
+
+        ctx.beginPath();
+        ctx.arc(sx, sy, r, 0, Math.PI * 2);
+        ctx.fillStyle = this.color.replace('ALPHA', this.alpha.toFixed(3));
+        ctx.fill();
+      }
+    }
+
+    class FoilConfetti3D {
+      constructor(originX, originY) {
+        this.x = originX + (Math.random() - 0.5) * 160;
+        this.y = originY + (Math.random() - 0.5) * 90;
+        this.vx = (Math.random() - 0.5) * 7.5;
+        this.vy = Math.random() * -5.5 - 2;
+        this.w = Math.random() * 9 + 6;
+        this.h = Math.random() * 7 + 4;
+        this.rot = Math.random() * Math.PI * 2;
+        this.rotSpeed = (Math.random() - 0.5) * 0.14;
+        this.flip = Math.random() * Math.PI;
+        this.flipSpeed = Math.random() * 0.12 + 0.05;
+        this.colorType = Math.floor(Math.random() * 4);
+        this.alpha = 1;
+        this.decay = Math.random() * 0.007 + 0.005;
+      }
+      update() {
+        this.vx *= 0.98;
+        this.vy += 0.08;
+        this.x += this.vx + Math.sin(this.flip) * 0.9;
+        this.y += this.vy;
+        this.rot += this.rotSpeed;
+        this.flip += this.flipSpeed;
+        this.alpha -= this.decay;
+      }
+      draw(ctx) {
+        if (this.alpha <= 0) return;
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rot);
+        ctx.scale(Math.cos(this.flip), 1);
+
+        let col = `rgba(30, 112, 227, ${this.alpha})`;
+        if (this.colorType === 1) col = `rgba(245, 158, 11, ${this.alpha})`;
+        if (this.colorType === 2) col = `rgba(16, 185, 129, ${this.alpha})`;
+        if (this.colorType === 3) col = `rgba(255, 255, 255, ${this.alpha})`;
+
+        ctx.fillStyle = col;
+        ctx.fillRect(-this.w / 2, -this.h / 2, this.w, this.h);
+        ctx.restore();
+      }
+    }
+
+    const fireworkSparks = [];
+    const confettiList = [];
+    const shockwaves = [];
+
+    const PALETTE = {
+      gold: 'rgba(245, 158, 11, ALPHA)',
+      goldShimmer: 'rgba(253, 230, 138, ALPHA)',
+      blue: 'rgba(30, 112, 227, ALPHA)',
+      blueLight: 'rgba(147, 197, 253, ALPHA)',
+      emerald: 'rgba(16, 185, 129, ALPHA)',
+      emeraldBright: 'rgba(52, 211, 153, ALPHA)',
+      white: 'rgba(255, 255, 255, ALPHA)'
+    };
+
+    function spawn3DBallBurst(originX, originY, count, primaryColor, secondaryColor, opts = {}) {
+      const activeLimit = isMobile ? SIMULATION_CONFIG.maxParticlesMobile : SIMULATION_CONFIG.maxParticlesDesktop;
+      if (fireworkSparks.length > activeLimit) return;
+
+      const num = isMobile ? Math.floor(count * 0.6) : count;
+      const speedBase = opts.speed || (isMobile ? 6.5 : 8.5);
+
+      for (let i = 0; i < num; i++) {
+        const theta = Math.random() * Math.PI * 2;
+        const phi = Math.acos(Math.random() * 2 - 1);
+        const speed = speedBase * (0.35 + 0.65 * Math.random());
+
+        const vx = speed * Math.sin(phi) * Math.cos(theta);
+        const vy = speed * Math.sin(phi) * Math.sin(theta);
+        const vz = speed * Math.cos(phi) * 12;
+
+        const color = Math.random() > 0.45 ? primaryColor : (secondaryColor || PALETTE.white);
+        fireworkSparks.push(new FireworkParticle3D(originX, originY, vz, vx, vy, vz, color, opts));
+      }
+    }
+
+    function spawn3DRingBurst(originX, originY, count, color) {
+      const num = isMobile ? Math.floor(count * 0.55) : count;
+      const ringAngle = Math.random() * Math.PI;
+      const speed = isMobile ? 5.5 : 7.5;
+
+      for (let i = 0; i < num; i++) {
+        const theta = (i / num) * Math.PI * 2;
+        const vx = Math.cos(theta) * speed;
+        const vy = Math.sin(theta) * speed * Math.cos(ringAngle);
+        const vz = Math.sin(theta) * speed * Math.sin(ringAngle) * 8;
+        fireworkSparks.push(new FireworkParticle3D(originX, originY, vz, vx, vy, vz, color, { decay: 0.015 }));
+      }
+    }
+
+    /**
+     * Efek Kembang Api Khusus Cincin Berlapis Multi-Warna Spektakuler (spawnBurstSpecial)
+     */
+    function spawnBurstSpecial(originX, originY, options = {}) {
+      const activeLimit = isMobile ? SIMULATION_CONFIG.maxParticlesMobile : SIMULATION_CONFIG.maxParticlesDesktop;
+      if (fireworkSparks.length > activeLimit) return;
+
+      const layers = [
+        { count: isMobile ? 35 : 55, speed: isMobile ? 7.2 : 9.0, tilt: 0.35, color: PALETTE.goldShimmer, decay: 0.013 },
+        { count: isMobile ? 30 : 45, speed: isMobile ? 5.6 : 7.0, tilt: -0.45, color: PALETTE.blueLight, decay: 0.014 },
+        { count: isMobile ? 25 : 38, speed: isMobile ? 4.2 : 5.2, tilt: 0.75, color: PALETTE.emeraldBright, decay: 0.016 },
+        { count: isMobile ? 20 : 30, speed: isMobile ? 2.8 : 3.6, tilt: -0.2, color: PALETTE.white, decay: 0.018 }
+      ];
+
+      layers.forEach((layer) => {
+        for (let i = 0; i < layer.count; i++) {
+          const theta = (i / layer.count) * Math.PI * 2;
+          const speedVar = layer.speed * (0.92 + 0.16 * Math.random());
+          const vx = Math.cos(theta) * speedVar;
+          const vy = Math.sin(theta) * speedVar * Math.cos(layer.tilt);
+          const vz = Math.sin(theta) * speedVar * Math.sin(layer.tilt) * 10;
+
+          fireworkSparks.push(new FireworkParticle3D(originX, originY, vz, vx, vy, vz, layer.color, {
+            decay: layer.decay,
+            size: Math.random() * 2.8 + 2.0,
+            trailLength: 5
+          }));
+        }
+      });
+
+      // Inti Percikan Tengah Berkabut Cahaya Kristal
+      for (let i = 0; i < (isMobile ? 18 : 30); i++) {
+        const theta = Math.random() * Math.PI * 2;
+        const phi = Math.acos(Math.random() * 2 - 1);
+        const coreSpeed = (isMobile ? 3.5 : 4.8) * Math.random();
+        const vx = coreSpeed * Math.sin(phi) * Math.cos(theta);
+        const vy = coreSpeed * Math.sin(phi) * Math.sin(theta);
+        const vz = coreSpeed * Math.cos(phi) * 8;
+        const coreColor = Math.random() > 0.5 ? PALETTE.gold : PALETTE.white;
+
+        fireworkSparks.push(new FireworkParticle3D(originX, originY, vz, vx, vy, vz, coreColor, {
+          decay: 0.02,
+          size: 2.2,
+          trailLength: 3
+        }));
+      }
+    }
+
+    function triggerConfetti(originX, originY, count) {
+      const actual = isMobile ? Math.floor(count * 0.5) : count;
+      for (let i = 0; i < actual; i++) {
+        confettiList.push(new FoilConfetti3D(originX, originY));
+      }
+    }
+
+    // Jadwal Pertunjukan Kembang Api Terkoreografi Sesuai Alur Baru
+    let choreographedSchedule = [];
+    function buildShowSchedule(cx, topY) {
+      choreographedSchedule = [
+        // DETIK 0.0: LANGSUNG SEKETIKA DENTUMAN AKBAR SAAT KLIK LUNCURKAN!
+        {
+          timeSec: 0.05,
+          action: () => {
+            playFireworkBoomSound(1.0, 1.0);
+            playFireworkCrackleSound(12);
+            playCelebrationChimes();
+            shockwaves.push(new ShockwaveRing(cx, topY, Math.min(width, 500), PALETTE.goldShimmer));
+            spawn3DBallBurst(cx, topY, 200, PALETTE.goldShimmer, PALETTE.blue, { speed: 9.2 });
+            spawn3DRingBurst(cx, topY, 65, PALETTE.emeraldBright);
+            triggerConfetti(cx, topY, 100);
+          }
+        },
+        // DETIK 1.0: Ledakan Krisan Emerald di Langit Kiri
+        {
+          timeSec: 1.0,
+          action: () => {
+            const x = Math.max(90, cx - width * 0.28);
+            const y = topY + height * 0.05;
+            playFireworkBoomSound(1.15, 0.7);
+            playFireworkCrackleSound(8);
+            shockwaves.push(new ShockwaveRing(x, y, 230, PALETTE.emeraldBright));
+            spawn3DBallBurst(x, y, 130, PALETTE.emeraldBright, PALETTE.gold, { speed: 7.5 });
+            triggerConfetti(x, y, 40);
+          }
+        },
+        // DETIK 2.0: Cincin Berlapis Biru Royal di Langit Kanan
+        {
+          timeSec: 2.0,
+          action: () => {
+            const x = Math.min(width - 90, cx + width * 0.28);
+            const y = topY - height * 0.03;
+            playFireworkBoomSound(0.9, 0.75);
+            playFireworkCrackleSound(9);
+            shockwaves.push(new ShockwaveRing(x, y, 250, PALETTE.blueLight));
+            spawn3DRingBurst(x, y, 75, PALETTE.goldShimmer);
+            spawn3DBallBurst(x, y, 95, PALETTE.blueLight, PALETTE.white, { speed: 6.2 });
+            triggerConfetti(x, y, 45);
+          }
+        },
+        // DETIK 3.2: Cincin Khusus 4 Lapisan Konsentris (spawnBurstSpecial) di Tengah Atas
+        {
+          timeSec: 3.2,
+          action: () => {
+            playFireworkBoomSound(1.2, 0.85);
+            playFireworkCrackleSound(12);
+            shockwaves.push(new ShockwaveRing(cx, topY - 10, 310, PALETTE.goldShimmer));
+            spawnBurstSpecial(cx, topY - 10);
+            triggerConfetti(cx, topY, 60);
+          }
+        },
+        // DETIK 4.2: Golden Willow & Salvo Kiri-Kanan Menutup 5 Detik Pertama
+        {
+          timeSec: 4.2,
+          action: () => {
+            playFireworkBoomSound(0.85, 0.8);
+            playFireworkCrackleSound(10);
+            shockwaves.push(new ShockwaveRing(cx, topY - height * 0.05, 320, PALETTE.gold));
+            spawn3DBallBurst(cx, topY - height * 0.05, 160, PALETTE.goldShimmer, PALETTE.gold, {
+              speed: 8.0,
+              isWillow: true,
+              decay: 0.009,
+              gravity: 0.065
+            });
+            triggerConfetti(cx, topY, 70);
+          }
+        },
+        // DETIK 5.0: TRANSISI KE COUNTDOWN LOADING 3D (Ledakan Kembang Api Penanda Hitung Mundur)
+        {
+          timeSec: 5.0,
+          action: () => {
+            playFireworkBoomSound(1.1, 0.75);
+            playFireworkCrackleSound(8);
+            playCelebrationChimes();
+            shockwaves.push(new ShockwaveRing(cx, topY, 260, PALETTE.emeraldBright));
+            spawn3DBallBurst(cx, topY, 110, PALETTE.emeraldBright, PALETTE.white, { speed: 6.5 });
+          }
+        },
+        // DETIK 6.5: Brocade Crown di Kiri Atas
+        {
+          timeSec: 6.5,
+          action: () => {
+            const x = Math.max(90, cx - width * 0.22);
+            const y = topY - height * 0.02;
+            playFireworkBoomSound(1.2, 0.6);
+            playFireworkCrackleSound(6);
+            spawn3DBallBurst(x, y, 100, PALETTE.blueLight, PALETTE.emeraldBright, { speed: 6.5 });
+          }
+        },
+        // DETIK 8.0: Peony Multi-Warna di Kanan Atas
+        {
+          timeSec: 8.0,
+          action: () => {
+            const x = Math.min(width - 90, cx + width * 0.22);
+            const y = topY + height * 0.02;
+            playFireworkBoomSound(1.0, 0.65);
+            playFireworkCrackleSound(8);
+            spawn3DBallBurst(x, y, 110, PALETTE.goldShimmer, PALETTE.emeraldBright, { speed: 6.8 });
+          }
+        },
+        // DETIK 9.2: Kaskade Debu Emas Terakhir Menjelang Navigasi
+        {
+          timeSec: 9.2,
+          action: () => {
+            playFireworkBoomSound(0.75, 0.5);
+            playFireworkCrackleSound(5);
+            spawn3DBallBurst(cx, topY - height * 0.08, 90, PALETTE.goldShimmer, PALETTE.gold, {
+              speed: 5.2,
+              isWillow: true,
+              decay: 0.012
+            });
+          }
+        }
+      ];
+    }
+
+    /**
+     * ==========================================================================
+     * 5. LOOP ANIMASI KANVAS UTAMA
+     * ==========================================================================
+     */
+    let lastTime = performance.now();
+    let prevSecondValue = 5;
+
+    function renderSpectacularFrame(now) {
+      const dt = Math.min(now - lastTime, 64);
+      lastTime = now;
+
+      const cx = width / 2;
+      const cy = height / 2;
+
+      ctx.fillStyle = 'rgba(4, 12, 23, 0.34)';
+      ctx.fillRect(0, 0, width, height);
+
+      drawAuroraRibbons(ctx, width, height);
+
+      for (const lum of lumens) {
+        lum.update(dt);
+        lum.draw(ctx, cx, cy);
+      }
+
+      for (const geom of geoms3D) {
+        geom.update();
+        geom.draw(ctx, cx, cy);
+      }
+
+      // Jika fase peluncuran aktif
+      if (isLaunching) {
+        const elapsed = now - launchStartTime;
+        const elapsedSec = elapsed / 1000;
+
+        // Jalankan koreografi kembang api
+        for (const item of choreographedSchedule) {
+          if (!item.executed && elapsedSec >= item.timeSec) {
+            item.executed = true;
+            item.action();
+          }
+        }
+
+        // SETELAH 5 DETIK: Munculkan modul countdown loading 3D
+        if (elapsed >= CELEBRATION_PURE_MS) {
+          if (!countdownRevealed) {
+            countdownRevealed = true;
+            countdownCard.classList.add('visible');
+          }
+
+          // Hitung mundur 5 detik (5, 4, 3, 2, 1, 0)
+          const countdownElapsed = elapsed - CELEBRATION_PURE_MS;
+          const countdownTotal = TOTAL_DURATION_MS - CELEBRATION_PURE_MS;
+          const countdownRemMs = Math.max(0, TOTAL_DURATION_MS - elapsed);
+          const remSec = Math.ceil(countdownRemMs / 1000);
+
+          if (remSec !== prevSecondValue && remSec >= 0) {
+            prevSecondValue = remSec;
+            countdownSecondsEl.textContent = String(remSec);
+            countdownSecondsEl.classList.remove('tick');
+            void countdownSecondsEl.offsetWidth;
+            countdownSecondsEl.classList.add('tick');
+
+            if (remSec <= 2) {
+              countdownNoteEl.textContent = 'Menghubungkan Sesi Autentikasi Pengguna...';
+            } else if (remSec <= 4) {
+              countdownNoteEl.textContent = 'Mempersiapkan Modul Tata Usaha & Layanan Internal...';
+            }
+          }
+
+          // Progres bar 0% -> 100% dalam durasi 5 detik hitung mundur
+          const countdownFrac = Math.min(1, countdownElapsed / countdownTotal);
+          const pct = Math.min(100, Math.floor(countdownFrac * 100));
+          progressBarFill.style.width = (countdownFrac * 100).toFixed(1) + '%';
+          progressPercentLabel.textContent = pct + '%';
+          progressBarTrack.setAttribute('aria-valuenow', String(pct));
+        }
+
+        // Navigasi resmi setelah total 10 detik
+        if (elapsed >= TOTAL_DURATION_MS) {
+          progressBarFill.style.width = '100%';
+          progressPercentLabel.textContent = '100%';
+          countdownSecondsEl.textContent = '0';
+
+          if (!celebrationNavigated) {
+            celebrationNavigated = true;
+            if (urlValidation.valid) {
+              srAnnouncer.textContent = 'Mengarahkan ke aplikasi SIMELATI sekarang...';
+              window.location.replace(urlValidation.url);
+            }
+          }
+          return;
+        }
+      }
+
+      // Perbarui & Gambar Shockwaves
+      for (let i = shockwaves.length - 1; i >= 0; i--) {
+        const sw = shockwaves[i];
+        sw.update();
+        sw.draw(ctx);
+        if (sw.alpha <= 0) shockwaves.splice(i, 1);
+      }
+
+      // Perbarui & Gambar Kembang Api (Additive Blend)
+      ctx.save();
+      ctx.globalCompositeOperation = 'lighter';
+      for (let i = fireworkSparks.length - 1; i >= 0; i--) {
+        const p = fireworkSparks[i];
+        p.update();
+        p.draw(ctx, cx, cy);
+        if (p.alpha <= 0) fireworkSparks.splice(i, 1);
+      }
+      ctx.restore();
+
+      // Perbarui & Gambar Confetti
+      for (let i = confettiList.length - 1; i >= 0; i--) {
+        const c = confettiList[i];
+        c.update();
+        c.draw(ctx);
+        if (c.alpha <= 0) confettiList.splice(i, 1);
+      }
+
+      animFrameId = requestAnimationFrame(renderSpectacularFrame);
+    }
+
+    animFrameId = requestAnimationFrame(renderSpectacularFrame);
+
+    /**
+     * ==========================================================================
+     * 6. EKSEKUSI PELUNCURAN INSTAN SEKETIKA (TRIGGER TOMBOL)
+     * ==========================================================================
+     */
+    function triggerInstantLaunch() {
+      if (isLaunching) return;
+      isLaunching = true;
+
+      // Aktifkan Audio Context saat klik pertama
+      getAudioContext();
+
+      // Nonaktifkan tombol
+      launchButton.disabled = true;
+      launchButton.style.cursor = 'not-allowed';
+      launchButton.setAttribute('aria-busy', 'true');
+
+      // Waktu awal & akhir
+      launchStartTime = performance.now();
+      launchEndTime = launchStartTime + TOTAL_DURATION_MS;
+
+      const targetY = Math.max(90, height * 0.22);
+      buildShowSchedule(width / 2, targetY);
+
+      // LANGSUNG MUNCULKAN LAYAR PERAYAAN DENGAN TRANSISI HALUS CEPAT
+      initialView.style.opacity = '0';
+      initialView.style.transform = 'scale(0.95) translateY(-10px)';
+      initialView.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+
+      setTimeout(() => {
+        initialView.style.display = 'none';
+        celebrationView.classList.add('active');
+        celebrationView.setAttribute('aria-hidden', 'false');
+        celebrationHeadline.focus();
+      }, 250);
+
+      srAnnouncer.textContent = 'Peluncuran resmi SIMELATI berhasil! Aplikasi telah resmi diluncurkan.';
+    }
+
+    launchButton.addEventListener('click', triggerInstantLaunch);
+
+    /**
+     * ==========================================================================
+     * 7. RESPON POINTER INTERAKTIF & TILT 3D
+     * ==========================================================================
+     */
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && !prefersReducedMotion) {
+      document.addEventListener('mousemove', (e) => {
+        if (isLaunching) return;
+        const normX = (e.clientX / width - 0.5) * 2;
+        const normY = (e.clientY / height - 0.5) * 2;
+
+        camera.x = normX * 28;
+        camera.y = normY * 20;
+
+        const tiltX = -normY * 4.5;
+        const tiltY = normX * 4.5;
+        portalCard.style.transform = `perspective(1400px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+      }, { passive: true });
+    }
+
+    /**
+     * ==========================================================================
+     * 8. PENANGANAN LATAR BELAKANG TAB
+     * ==========================================================================
+     */
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && isLaunching && !celebrationNavigated) {
+        const now = performance.now();
+        if (now >= launchEndTime) {
+          celebrationNavigated = true;
+          if (urlValidation.valid) {
+            window.location.replace(urlValidation.url);
+          }
+        }
+      }
+    });
+
+  </script>
+</body>
+</html>

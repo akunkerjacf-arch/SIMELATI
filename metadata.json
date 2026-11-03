@@ -1,0 +1,6 @@
+{
+  "name": "Peluncuran Resmi SIMELATI",
+  "description": "Halaman peluncuran resmi aplikasi SIMELATI - Sistem Informasi Manajemen Layanan Administrasi dan Tata Usaha Internal",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
